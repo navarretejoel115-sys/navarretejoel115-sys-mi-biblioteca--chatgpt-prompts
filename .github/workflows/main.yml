@@ -1,0 +1,1 @@
+ gh pr create --base main --title "feat: NAVARRETE115-biblioteca scaffold" --body "Scaffold: pnpm workspace, packages/library (TS), packages/devotionals (66), CI/workflows, dependabot, husky, README, PRIVACY.md"
