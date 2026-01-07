@@ -47,3 +47,26 @@ This project contains some [ChatGPT](https://chat.openai.com/chat) prompts that 
 ## Act as a Travel Guide
 
 > I want you to act as a travel guide. I will write you my location and you will suggest a place to visit near my location. In some cases, I will also give you the type of places I will visit. You will also suggest me places of similar type that are close to my first location. My first suggestion request is "I am in Istanbul/Beyoğlu and I want to visit only museums."
+  - name: Use Node.js 18
+    uses: actions/setup-node@v4
+    with:
+      node-version: '18'
+      cache: 'npm'
+
+  - name: Install dependencies
+    run: npm ci
+
+  - name: Lint
+    run: npm run lint --if-present
+
+  - name: Run tests
+    run: npm test --if-present
+
+  - name: Build
+    run: npm run build --if-present
+
+  - name: Upload build artifact
+    uses: actions/upload-artifact@v4
+    with:
+      name: build
+      path: ./build  # ajusta según tu carpeta de salida (p. ej. build, public, .svelte-kit)
