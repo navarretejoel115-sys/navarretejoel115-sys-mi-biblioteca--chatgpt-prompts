@@ -1,5 +1,23 @@
 # 🧠 Awesome ChatGPT Prompts
-
+from openai.types import (
+    AllModels,
+    ChatModel,
+    ComparisonFilter,
+    CompoundFilter,
+    CustomToolInputFormat,
+    ErrorObject,
+    FunctionDefinition,
+    FunctionParameters,
+    Metadata,
+    Reasoning,
+    ReasoningEffort,
+    ResponseFormatJSONObject,
+    ResponseFormatJSONSchema,
+    ResponseFormatText,
+    ResponseFormatTextGrammar,
+    ResponseFormatTextPython,
+    ResponsesModel,
+)
 This project contains some [ChatGPT](https://chat.openai.com/chat) prompts that works well.
 
 ## Act as a Linux Terminal
